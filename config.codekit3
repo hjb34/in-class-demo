@@ -48,6 +48,54 @@
       "oAP" : "\/design\/structure-tags.sketch",
       "oF" : 0
     },
+    "\/dev\/content\/_header.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/_header.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/_hero-2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/_hero-2.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/_hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/_hero.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/_history.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/_history.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/_skills.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/_skills.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/_skynet.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/_skynet.html",
+      "oF" : 1
+    },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
