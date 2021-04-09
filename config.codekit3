@@ -62,7 +62,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/_hero-2.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/content\/_hero.kit" : {
       "cB" : 0,
@@ -70,7 +70,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/_hero.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/content\/_history.kit" : {
       "cB" : 0,
@@ -78,7 +78,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/_history.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/content\/_skills.kit" : {
       "cB" : 0,
@@ -86,7 +86,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/_skills.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/content\/_skynet.kit" : {
       "cB" : 0,
@@ -94,7 +94,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/_skynet.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
@@ -117,8 +117,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 2
+      "oAP" : "\/dev\/index.html",
+      "oF" : 0
     },
     "\/dev\/js\/scripts.js" : {
       "bF" : 0,
@@ -173,48 +173,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/components\/_buttons.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/components\/_buttons.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/components\/_forms.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/components\/_forms.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/components\/_navigation.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/components\/_navigation.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/dev\/scss\/helpers\/_mixins.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -243,34 +201,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/layout\/_footer.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/layout\/_footer.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/layout\/_header.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/layout\/_header.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -279,8 +209,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/css\/styles.css",
-      "oF" : 2,
+      "oAP" : "\/dev\/scss\/styles.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
