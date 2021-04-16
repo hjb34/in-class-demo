@@ -385,8 +385,24 @@ ul li {
 .content .skills {
   grid-area: skills;
 }
+.content .skills section {
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". section-2 .";
+}
+.content .skills section .skills-content {
+  grid-area: section-2;
+}
 .content .skynet {
   grid-area: skynet;
+  display: grid;
+  grid-template-columns: 10px auto 10px;
+  grid-template-areas: ". gallery .";
+}
+.content .skynet ul {
+  grid-area: gallery;
+  display: grid;
+  grid-gap: 20px;
 }
 .content .footer {
   grid-area: footer;
@@ -394,10 +410,6 @@ ul li {
 @media (min-width: 768px) {
   .content {
     margin-bottom: 32px;
-  }
-  .content .skynet ul {
-    display: grid;
-    grid-template-columns: 50% 1fr;
   }
 }
 @media (min-width: 1024px) {

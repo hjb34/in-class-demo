@@ -44,10 +44,29 @@ ul {
 
 	.skills {
 		grid-area: skills;
+		section {
+			display: grid;
+			grid-template-columns: 10px auto 10px;
+			grid-template-areas: ". section-2 .";
+
+			.skills-content {
+				grid-area: section-2;
+			}
+		}
 	}
 
 	.skynet {
 		grid-area: skynet;
+		display: grid;
+		grid-template-columns: 10px auto 10px;
+		// this specifies a 3 column grid with the gallery in the center
+		grid-template-areas: ". gallery .";
+
+		ul {
+			grid-area: gallery;
+			display: grid;
+			grid-gap: 20px;
+		}
 	}
 
 	.footer {
@@ -58,31 +77,6 @@ ul {
 
 	@include md {
 		margin-bottom: 32px;
-
-		.skynet ul {
-			display: grid;
-			grid-template-columns: 50% 1fr;
-
-			// .text {
-			// 	grid-area: text;
-			// }
-
-			// .image-1 {
-			// 	grid-area: image-1;
-			// }
-
-			// .image-2 {
-			// 	grid-area: image-2;
-			// }
-
-			// .image-3 {
-			// 	grid-area: image-3;
-			// }
-
-			// .image-4 {
-			// 	grid-area: image-4;
-			// }
-		}
 	}
 
 	@include lg {
