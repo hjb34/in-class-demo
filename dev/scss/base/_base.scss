@@ -30,6 +30,30 @@ ul {
 		grid-area: header;
 	}
 
+	.hero {
+		grid-area: hero;
+	}
+
+	.history {
+		grid-area: history;
+	}
+
+	.hero-2 {
+		grid-area: hero-2;
+	}
+
+	.skills {
+		grid-area: skills;
+	}
+
+	.skynet {
+		grid-area: skynet;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+
 	margin-bottom: 24px;
 
 	@include md {

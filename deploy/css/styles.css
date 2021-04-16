@@ -373,6 +373,24 @@ ul li {
 .content .header {
   grid-area: header;
 }
+.content .hero {
+  grid-area: hero;
+}
+.content .history {
+  grid-area: history;
+}
+.content .hero-2 {
+  grid-area: hero-2;
+}
+.content .skills {
+  grid-area: skills;
+}
+.content .skynet {
+  grid-area: skynet;
+}
+.content .footer {
+  grid-area: footer;
+}
 @media (min-width: 768px) {
   .content {
     margin-bottom: 32px;
