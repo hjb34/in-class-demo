@@ -1,0 +1,9 @@
+.image-4 {
+	display: none;
+}
+
+@include md {
+	.image-4 {
+		display: block;
+	}
+}

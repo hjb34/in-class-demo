@@ -395,6 +395,15 @@ ul li {
   .content {
     margin-bottom: 32px;
   }
+  .content .skynet ul {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .content {
+    margin-bottom: 64px;
+  }
 }
 @media (min-width: 1200px) {
   .content {
@@ -421,4 +430,14 @@ p {
 
 .section-title {
   font-weight: 300;
+}
+
+.image-4 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .image-4 {
+    display: block;
+  }
 }

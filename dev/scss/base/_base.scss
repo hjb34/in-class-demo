@@ -58,6 +58,35 @@ ul {
 
 	@include md {
 		margin-bottom: 32px;
+
+		.skynet ul {
+			display: grid;
+			grid-template-columns: 50% 1fr;
+
+			// .text {
+			// 	grid-area: text;
+			// }
+
+			// .image-1 {
+			// 	grid-area: image-1;
+			// }
+
+			// .image-2 {
+			// 	grid-area: image-2;
+			// }
+
+			// .image-3 {
+			// 	grid-area: image-3;
+			// }
+
+			// .image-4 {
+			// 	grid-area: image-4;
+			// }
+		}
+	}
+
+	@include lg {
+		margin-bottom: 64px;
 	}
 
 	@include xl {
