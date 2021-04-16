@@ -2,27 +2,41 @@
     Base
 ============= */
 figure {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
-    li {
-        list-style: none;
-    }
+	li {
+		list-style: none;
+	}
 }
 
 .content {
-    margin-bottom: 24px;
+	display: grid;
+	grid-template-areas:
+		"header"
+		"hero"
+		"history"
+		"hero-2"
+		"skills"
+		"skynet"
+		"footer";
 
-    @include md {
-        margin-bottom: 32px;
-    }
+	.header {
+		grid-area: header;
+	}
 
-    @include xl {
-        margin-bottom: 64px;
-    }
+	margin-bottom: 24px;
+
+	@include md {
+		margin-bottom: 32px;
+	}
+
+	@include xl {
+		margin-bottom: 64px;
+	}
 }

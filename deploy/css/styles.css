@@ -366,7 +366,12 @@ ul li {
 }
 
 .content {
+  display: grid;
+  grid-template-areas: "header" "hero" "history" "hero-2" "skills" "skynet" "footer";
   margin-bottom: 24px;
+}
+.content .header {
+  grid-area: header;
 }
 @media (min-width: 768px) {
   .content {
