@@ -508,6 +508,12 @@ p {
   background-repeat: no-repeat;
 }
 
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .image-1 {
   background-image: url("/deploy/img/skynet/gallery-1.jpg");
 }
