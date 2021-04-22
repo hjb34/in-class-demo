@@ -403,7 +403,8 @@ ul li {
   grid-area: gallery;
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "image-1" "image-2" "image-3" "image-4";
+  grid-template-rows: repeat(5, 230px);
+  grid-template-areas: "text" "image-1" "image-1" "image-2" "image-3" "image-4";
 }
 @media (min-width: 768px) {
   .content .skynet ul {
@@ -480,7 +481,7 @@ p {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 50vh;
+  height: 350px;
 }
 
 .skills .skills-image {
@@ -495,8 +496,28 @@ p {
   background: url("../../../deploy/img/hero-2/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 60vh;
+}
+
+.image-1,
+.image-2,
+.image-3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image-1 {
+  background-image: url("/deploy/img/skynet/gallery-1.jpg");
+}
+
+.image-2 {
+  background-image: url("/deploy/img/skynet/gallery-2.jpg");
+}
+
+.image-3 {
+  background-image: url("/deploy/img/skynet/gallery-3.jpg");
 }
 
 .image-4 {
