@@ -403,6 +403,37 @@ ul li {
   grid-area: gallery;
   display: grid;
   grid-gap: 20px;
+  grid-template-areas: "image-1" "image-2" "image-3" "image-4";
+}
+@media (min-width: 768px) {
+  .content .skynet ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "image-1 image-2" "image-1 text" "image-3 image-5";
+  }
+}
+@media (min-width: 1024px) {
+  .content .skynet ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "image-1 image-2 image-6" "image-1 text image-4" "image-3 image-5 image-4";
+  }
+}
+.content .skynet .text {
+  grid-area: text;
+}
+.content .skynet .image-1 {
+  grid-area: image-1;
+}
+.content .skynet .image-2 {
+  grid-area: image-2;
+}
+.content .skynet .image-3 {
+  grid-area: image-3;
+}
+.content .skynet .image-4 {
+  grid-area: image-4;
+}
+.content .skynet .image-5 {
+  grid-area: image-5;
 }
 .content .footer {
   grid-area: footer;
@@ -448,8 +479,29 @@ p {
   display: none;
 }
 
+.image-5 {
+  display: none;
+}
+
+.image-6 {
+  display: none;
+}
+
 @media (min-width: 768px) {
+  .image-5 {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
   .image-4 {
+    display: block;
+  }
+
+  .image-5 {
+    display: block;
+  }
+
+  .image-6 {
     display: block;
   }
 }
