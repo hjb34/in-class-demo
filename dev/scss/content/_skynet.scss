@@ -1,9 +1,52 @@
+.image-1,
+.image-2,
+.image-3 {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image-1 {
+	background-image: url("/deploy/img/skynet/gallery-1.jpg");
+}
+
+.image-2 {
+	background-image: url("/deploy/img/skynet/gallery-2.jpg");
+}
+
+.image-3 {
+	background-image: url("/deploy/img/skynet/gallery-3.jpg");
+}
+
 .image-4 {
+	display: none;
+}
+.image-5 {
+	display: none;
+}
+.image-6 {
 	display: none;
 }
 
 @include md {
+	.image-5 {
+		display: block;
+	}
+}
+
+@include lg {
 	.image-4 {
+		display: block;
+	}
+	.image-5 {
+		display: block;
+	}
+	.image-6 {
 		display: block;
 	}
 }
