@@ -377,7 +377,22 @@ ul li {
   grid-area: hero;
 }
 .content .history {
+  display: grid;
   grid-area: history;
+}
+@media (min-width: 768px) {
+  .content .history {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .content .history .history-header {
+    grid-column: 2/12;
+  }
+  .content .history .history-content {
+    grid-column: 2/12;
+  }
+  .content .history .secondary {
+    grid-column: 3/11;
+  }
 }
 .content .hero-2 {
   grid-area: hero-2;
