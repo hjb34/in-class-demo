@@ -61,11 +61,11 @@ ul {
 		grid-area: skills;
 		section {
 			display: grid;
-			grid-template-columns: 10px auto 10px;
-			grid-template-areas: ". section-2 .";
+			grid-template-columns: repeat(12, 1fr);
 
 			.skills-content {
 				grid-area: section-2;
+				grid-column: 2 / 12;
 			}
 		}
 	}
