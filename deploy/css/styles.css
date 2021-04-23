@@ -505,6 +505,9 @@ p {
   height: 370px;
 }
 
+.skills-content {
+  margin: 20px;
+}
 .skills-content ul li {
   display: flex;
   justify-content: space-between;
@@ -573,4 +576,7 @@ p {
   .image-6 {
     display: block;
   }
+}
+.footer ul {
+  display: flex;
 }
