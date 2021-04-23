@@ -1,6 +1,7 @@
 .image-1,
 .image-2,
-.image-3 {
+.image-3,
+.image-5 {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -36,6 +37,7 @@
 @include md {
 	.image-5 {
 		display: block;
+		background-image: url("/deploy/img/skynet/gallery-5.jpg");
 	}
 }
 

@@ -368,6 +368,7 @@ ul li {
 .content {
   display: grid;
   grid-template-areas: "header" "hero" "history" "skills" "hero-2" "skynet" "footer";
+  grid-gap: 50px;
   margin-bottom: 24px;
 }
 .content .header {
@@ -424,6 +425,7 @@ ul li {
 @media (min-width: 768px) {
   .content .skynet ul {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
     grid-template-areas: "image-1 image-2" "image-1 text" "image-3 image-5";
   }
 }
@@ -549,7 +551,8 @@ p {
 
 .image-1,
 .image-2,
-.image-3 {
+.image-3,
+.image-5 {
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -587,6 +590,7 @@ p {
 @media (min-width: 768px) {
   .image-5 {
     display: block;
+    background-image: url("/deploy/img/skynet/gallery-5.jpg");
   }
 }
 @media (min-width: 1024px) {
