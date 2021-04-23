@@ -21,8 +21,8 @@ ul {
 		"header"
 		"hero"
 		"history"
-		"hero-2"
 		"skills"
+		"hero-2"
 		"skynet"
 		"footer";
 
@@ -35,7 +35,22 @@ ul {
 	}
 
 	.history {
+		display: grid;
 		grid-area: history;
+
+		@include md {
+			grid-template-columns: repeat(12, 1fr);
+
+			.history-header {
+				grid-column: 2 / 12;
+			}
+			.history-content {
+				grid-column: 2 / 12;
+			}
+			.secondary {
+				grid-column: 3 / 11;
+			}
+		}
 	}
 
 	.hero-2 {
@@ -66,6 +81,48 @@ ul {
 			grid-area: gallery;
 			display: grid;
 			grid-gap: 20px;
+			grid-template-rows: repeat(5, 230px);
+			grid-template-areas:
+				"text"
+				"image-1"
+				"image-1"
+				"image-2"
+				"image-3"
+				"image-4";
+
+			@include md {
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-areas:
+					"image-1 image-2"
+					"image-1 text"
+					"image-3 image-5";
+			}
+
+			@include lg {
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-areas:
+					"image-1 image-2 image-6"
+					"image-1 text image-4"
+					"image-3 image-5 image-4";
+			}
+		}
+		.text {
+			grid-area: text;
+		}
+		.image-1 {
+			grid-area: image-1;
+		}
+		.image-2 {
+			grid-area: image-2;
+		}
+		.image-3 {
+			grid-area: image-3;
+		}
+		.image-4 {
+			grid-area: image-4;
+		}
+		.image-5 {
+			grid-area: image-5;
 		}
 	}
 
