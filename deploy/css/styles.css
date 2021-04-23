@@ -484,12 +484,30 @@ p {
   height: 350px;
 }
 
-.skills .skills-image {
+.history-header {
+  display: flex;
+  flex-direction: column;
+  margin: 80px;
+}
+.history-header img {
+  width: 115px;
+}
+
+.history-content {
+  margin: 80px;
+}
+
+.skills-image {
   background: url("../../../deploy/img/skills/robot.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 370px;
+}
+
+.skills-content ul li {
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero-2 {

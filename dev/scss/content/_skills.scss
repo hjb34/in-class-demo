@@ -1,9 +1,13 @@
-.skills {
-	.skills-image {
-		background: url("../../../deploy/img/skills/robot.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 100%;
-		height: 370px;
+.skills-image {
+	background: url("../../../deploy/img/skills/robot.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 370px;
+}
+.skills-content {
+	ul li {
+		display: flex;
+		justify-content: space-between;
 	}
 }
