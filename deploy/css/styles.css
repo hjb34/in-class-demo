@@ -487,14 +487,14 @@ p {
 .history-header {
   display: flex;
   flex-direction: column;
-  margin: 80px;
+  margin: 40px;
 }
 .history-header img {
   width: 115px;
 }
 
 .history-content {
-  margin: 80px;
+  margin: 40px;
 }
 
 .skills-image {
