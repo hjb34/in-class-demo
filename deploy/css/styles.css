@@ -443,7 +443,7 @@ ul li {
 }
 @media (min-width: 1024px) {
   .content .skynet ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "image-1 image-2 image-6" "image-1 text image-4" "image-3 image-5 image-4";
   }
 }
@@ -464,6 +464,9 @@ ul li {
 }
 .content .skynet .image-5 {
   grid-area: image-5;
+}
+.content .skynet .image-6 {
+  grid-area: image-6;
 }
 .content .footer {
   grid-area: footer;
@@ -595,7 +598,9 @@ p {
 .image-1,
 .image-2,
 .image-3,
-.image-5 {
+.image-4,
+.image-5,
+.image-6 {
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -639,6 +644,7 @@ p {
 @media (min-width: 1024px) {
   .image-4 {
     display: block;
+    background-image: url("/deploy/img/skynet/gallery-4.jpg");
   }
 
   .image-5 {
@@ -647,6 +653,7 @@ p {
 
   .image-6 {
     display: block;
+    background-image: url("/deploy/img/skynet/gallery-6.jpg");
   }
 }
 .footer h1 {

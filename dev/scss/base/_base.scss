@@ -112,7 +112,7 @@ ul {
 			}
 
 			@include lg {
-				grid-template-columns: repeat(2, 1fr);
+				grid-template-columns: repeat(3, 1fr);
 				grid-template-areas:
 					"image-1 image-2 image-6"
 					"image-1 text image-4"
@@ -136,6 +136,9 @@ ul {
 		}
 		.image-5 {
 			grid-area: image-5;
+		}
+		.image-6 {
+			grid-area: image-6;
 		}
 	}
 
