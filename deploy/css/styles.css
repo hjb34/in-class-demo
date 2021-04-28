@@ -395,6 +395,17 @@ ul li {
     grid-column: 3/11;
   }
 }
+@media (min-width: 1024px) {
+  .content .history .history-header {
+    grid-column: 3/11;
+  }
+  .content .history .history-content {
+    grid-column: 3/11;
+  }
+  .content .history .secondary {
+    grid-column: 4/10;
+  }
+}
 .content .hero-2 {
   grid-area: hero-2;
 }
@@ -410,12 +421,6 @@ ul li {
   grid-column: 2/12;
 }
 @media (min-width: 1024px) {
-  .content .skills {
-    display: grid;
-    grid-template-columns: 500px auto;
-  }
-}
-@media (min-width: 1200px) {
   .content .skills {
     display: grid;
     grid-template-columns: 500px auto;

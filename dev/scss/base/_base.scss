@@ -52,6 +52,18 @@ ul {
 				grid-column: 3 / 11;
 			}
 		}
+
+		@include lg {
+			.history-header {
+				grid-column: 3 / 11;
+			}
+			.history-content {
+				grid-column: 3 / 11;
+			}
+			.secondary {
+				grid-column: 4 / 10;
+			}
+		}
 	}
 
 	.hero-2 {
@@ -72,11 +84,6 @@ ul {
 		}
 
 		@include lg {
-			display: grid;
-			grid-template-columns: 500px auto;
-		}
-
-		@include xl {
 			display: grid;
 			grid-template-columns: 500px auto;
 		}
