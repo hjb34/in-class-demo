@@ -425,7 +425,7 @@ ul li {
 @media (min-width: 768px) {
   .content .skynet ul {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px);
     grid-template-areas: "image-1 image-2" "image-1 text" "image-3 image-5";
   }
 }
@@ -504,14 +504,22 @@ p {
 .history-header {
   display: flex;
   flex-direction: column;
-  margin: 40px;
+  margin: 40px 40px 0 40px;
+  text-align: center;
 }
 .history-header img {
+  margin: 10px auto;
   width: 115px;
+}
+.history-header h1 {
+  margin: 20px 0;
 }
 
 .history-content {
-  margin: 40px;
+  margin: 20px 40px;
+}
+.history-content p {
+  margin: 15px 0;
 }
 
 .skills-image {
