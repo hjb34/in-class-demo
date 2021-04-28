@@ -60,6 +60,7 @@ ul {
 
 	.skills {
 		grid-area: skills;
+
 		section {
 			display: grid;
 			grid-template-columns: repeat(12, 1fr);
@@ -68,6 +69,16 @@ ul {
 				grid-area: section-2;
 				grid-column: 2 / 12;
 			}
+		}
+
+		@include lg {
+			display: grid;
+			grid-template-columns: 500px auto;
+		}
+
+		@include xl {
+			display: grid;
+			grid-template-columns: 500px auto;
 		}
 	}
 
