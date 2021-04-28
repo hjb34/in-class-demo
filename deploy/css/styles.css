@@ -514,6 +514,15 @@ p {
   font-weight: 300;
 }
 
+form input {
+  width: 80%;
+  padding: 20px;
+}
+
+form button {
+  padding: 10px;
+}
+
 .hero {
   background: url("../../../deploy/img/hero.jpg");
   background-size: cover;
