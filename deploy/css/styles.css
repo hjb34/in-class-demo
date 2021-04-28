@@ -623,6 +623,16 @@ p {
     display: block;
   }
 }
+.footer h1 {
+  text-align: center;
+}
+
 .footer ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.footer ul li {
+  margin: 10px;
 }
