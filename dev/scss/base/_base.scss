@@ -135,6 +135,7 @@ ul {
 	margin-bottom: 24px;
 
 	@include md {
+		grid-gap: 0;
 		margin-bottom: 32px;
 	}
 
