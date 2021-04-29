@@ -1,4 +1,5 @@
 .footer {
+	background: $saffron;
 	h1 {
 		text-align: center;
 	}
@@ -12,5 +13,10 @@
 
 	li {
 		margin: 10px;
+	}
+
+	a:hover {
+		opacity: 0.5;
+		transition: opacity ease 0.2s;
 	}
 }

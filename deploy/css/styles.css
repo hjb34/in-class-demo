@@ -543,6 +543,7 @@ form button {
 }
 .history-header h1 {
   margin: 20px 0;
+  color: #f8c832;
 }
 
 .history-content {
@@ -670,6 +671,9 @@ form button {
     background-image: url("/deploy/img/skynet/gallery-6.jpg");
   }
 }
+.footer {
+  background: #f8c832;
+}
 .footer h1 {
   text-align: center;
 }
@@ -682,4 +686,8 @@ form button {
 }
 .footer ul li {
   margin: 10px;
+}
+.footer ul a:hover {
+  opacity: 0.5;
+  transition: opacity ease 0.2s;
 }
