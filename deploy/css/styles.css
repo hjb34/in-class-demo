@@ -554,6 +554,7 @@ form button {
 }
 
 .skills {
+  background: #222222;
   margin: 40px 0 0;
 }
 
@@ -572,6 +573,7 @@ form button {
 
 .skills-content {
   margin: 30px 0;
+  color: white;
 }
 .skills-content p {
   margin: 20px 0;
@@ -624,6 +626,7 @@ form button {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #f8c832;
 }
 
 .image-1 {
@@ -673,6 +676,7 @@ form button {
 }
 .footer {
   background: #f8c832;
+  padding: 30px;
 }
 .footer h1 {
   text-align: center;
