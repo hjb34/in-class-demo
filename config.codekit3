@@ -40,14 +40,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/structure-tags.sketch" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/design\/structure-tags.sketch",
-      "oF" : 0
-    },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -60,7 +52,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/dev\/global\/scripts.html",
       "oF" : 0
     },
