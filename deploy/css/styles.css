@@ -368,7 +368,6 @@ ul li {
 .content {
   display: grid;
   grid-template-areas: "header" "hero" "history" "skills" "hero-2" "skynet" "footer";
-  grid-gap: 50px;
   margin-bottom: 24px;
 }
 .content .header {
@@ -514,22 +513,51 @@ p {
   font-weight: 300;
 }
 
-form input {
-  width: 80%;
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-container,
+.button-wrapper {
   padding: 20px;
 }
 
-form button {
-  background: #f8c832;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-}
-form button:hover {
-  background: #e2ba06;
-  transition: background-color ease 0.2s;
+.nav {
+  display: none;
 }
 
+.nav-container div:hover + .nav,
+.nav:hover {
+  display: block;
+}
+
+.burger-wrapper:hover ~ .nav, .burger-wrapper:active ~ .nav {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .burger-wrapper {
+    display: none;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .nav {
+    display: block;
+  }
+  .nav ul {
+    display: flex;
+  }
+  .nav ul li {
+    padding: 10px;
+  }
+}
 .hero {
   background: url("../../../deploy/img/hero.jpg");
   background-size: cover;
