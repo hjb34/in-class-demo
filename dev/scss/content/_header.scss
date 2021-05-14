@@ -1,58 +1,91 @@
-.header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px;
-}
+header {
+	background-color: $white;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
 
-#nav-container {
-	ul {
-		display: none;
-		margin-bottom: 25px;
-	}
-	ul li {
-		text-align: center;
+	> div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-		a {
-			display: inline-block;
-			padding: 15px 0;
-			text-decoration: none;
-			background: grey;
-			width: 100%;
-			transition: 0.25s;
-			color: white;
+		#button-container {
+			padding: 10px;
+			text-align: right;
 
-			&:hover {
-				background: darken(grey, 10%);
-			}
+			button {
+				background-color: $electricYellow;
+				border-radius: 23px;
+				color: $black;
+				display: inline-block;
+				font-size: rem-calc(18);
+				font-weight: 700;
+				padding: 10px 20px;
+				border: none;
+				transition: 0.25s;
 
-			&:active {
-				background: $electricYellow;
-			}
-
-			&:link,
-			&:visited {
-				color: darken(grey, 20%);
+				&:hover {
+					background-color: $black;
+					color: $white;
+				}
 			}
 		}
-	}
-}
 
-@include lg {
-	#nav-container {
-		ul {
-			display: flex;
-			margin-bottom: 0;
-		}
-		ul li {
+		#burger-container {
 			align-items: center;
-			a {
-				background: none;
-				padding: 10px;
+			display: flex;
+			padding: 10px;
+
+			@include lg {
+				display: none !important;
+			}
+
+			i {
+				cursor: pointer;
+				font-size: rem-calc(30);
 			}
 		}
-	}
-	.burger-wrapper {
-		display: none;
+
+		#nav-container {
+			background-color: $nightDark;
+			display: none;
+			width: 100%;
+			position: absolute;
+			top: 60px;
+			.nav-btns {
+				display: inline-block;
+				text-decoration: none;
+				margin: 0 auto;
+				color: $white;
+				padding: 20px 0;
+				width: 100%;
+				&:hover {
+					background: $night;
+				}
+				&:active {
+					background: $electricYellow;
+				}
+			}
+			ul li {
+				text-align: center;
+			}
+			@include lg {
+				background-color: $white;
+				display: block !important;
+				position: unset;
+				width: auto;
+				.nav-btns {
+					color: $nightDark;
+				}
+				ul {
+					display: flex;
+					align-items: center;
+				}
+				ul li {
+					margin: 0 20px;
+				}
+			}
+		}
 	}
 }
