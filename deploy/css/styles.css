@@ -352,167 +352,102 @@ template {
 /* =============
     Base
 ============= */
-figure {
+body ul {
   margin: 0;
   padding: 0;
 }
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul li {
+body ul li {
   list-style: none;
-}
-
-.content {
-  display: grid;
-  grid-template-areas: "header" "hero" "history" "skills" "hero-2" "skynet" "footer";
-  margin-bottom: 24px;
-}
-.content .header {
-  grid-area: header;
-}
-.content .hero {
-  grid-area: hero;
-}
-.content .history {
-  display: grid;
-  grid-area: history;
-}
-@media (min-width: 768px) {
-  .content .history {
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .content .history .history-header {
-    grid-column: 2/12;
-  }
-  .content .history .history-content {
-    grid-column: 2/12;
-  }
-  .content .history .secondary {
-    grid-column: 3/11;
-  }
-}
-@media (min-width: 1024px) {
-  .content .history .history-header {
-    grid-column: 3/11;
-  }
-  .content .history .history-content {
-    grid-column: 3/11;
-  }
-  .content .history .secondary {
-    grid-column: 4/10;
-  }
-}
-.content .hero-2 {
-  grid-area: hero-2;
-}
-.content .skills {
-  grid-area: skills;
-}
-.content .skills section {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-.content .skills section .skills-content {
-  grid-area: section-2;
-  grid-column: 2/12;
-}
-@media (min-width: 1024px) {
-  .content .skills {
-    display: grid;
-    grid-template-columns: 500px auto;
-  }
-}
-.content .skynet {
-  grid-area: skynet;
-  display: grid;
-  grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". gallery .";
-}
-.content .skynet ul {
-  grid-area: gallery;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-rows: repeat(5, 230px);
-  grid-template-areas: "text" "image-1" "image-1" "image-2" "image-3" "image-4";
-}
-@media (min-width: 768px) {
-  .content .skynet ul {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 300px);
-    grid-template-areas: "image-1 image-2" "image-1 text" "image-3 image-5";
-  }
-}
-@media (min-width: 1024px) {
-  .content .skynet ul {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "image-1 image-2 image-6" "image-1 text image-4" "image-3 image-5 image-4";
-  }
-}
-.content .skynet .text {
-  grid-area: text;
-}
-.content .skynet .image-1 {
-  grid-area: image-1;
-}
-.content .skynet .image-2 {
-  grid-area: image-2;
-}
-.content .skynet .image-3 {
-  grid-area: image-3;
-}
-.content .skynet .image-4 {
-  grid-area: image-4;
-}
-.content .skynet .image-5 {
-  grid-area: image-5;
-}
-.content .skynet .image-6 {
-  grid-area: image-6;
-}
-.content .footer {
-  grid-area: footer;
-}
-@media (min-width: 768px) {
-  .content {
-    grid-gap: 0;
-    margin-bottom: 32px;
-  }
-}
-@media (min-width: 1024px) {
-  .content {
-    margin-bottom: 64px;
-  }
-}
-@media (min-width: 1200px) {
-  .content {
-    margin-bottom: 64px;
-  }
 }
 
 /* =============
     Typography
 ============= */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Comfortaa", cursive;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
 }
 
 p {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-.section-title {
-  font-weight: 300;
+/* =============
+    Buttons
+============= */
+/* =============
+    Forms
+============= */
+[type=text], [type=password], [type=date], [type=datetime], [type=datetime-local], [type=month], [type=week], [type=email], [type=number], [type=search], [type=tel], [type=time], [type=url], [type=color], textarea {
+  box-shadow: none;
 }
 
+[type=text]:focus, [type=password]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=month]:focus, [type=week]:focus, [type=email]:focus, [type=number]:focus, [type=search]:focus, [type=tel]:focus, [type=time]:focus, [type=url]:focus, [type=color]:focus, textarea:focus {
+  box-shadow: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  -webkit-appearance: none;
+}
+
+/* =============
+    Navigation
+============= */
+#nav-container ul {
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  #nav-container ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 20px;
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li {
+    align-items: center;
+    border-right: 2px solid #222222;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+  padding: 0 20px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 1024px) {
+  #nav-container ul li a:link,
+#nav-container ul li a:visited {
+    color: #000;
+  }
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+  color: #F8C832;
+}
+#nav-container ul li:last-child {
+  border: none;
+}
+
+/* =============
+    Header
+============= */
 header {
   background-color: #fff;
   left: 0;
@@ -521,32 +456,25 @@ header {
   width: 100%;
 }
 header > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-areas: "logo burger" "nav nav";
+  grid-template-columns: 20% auto;
 }
-header > div #button-container {
+@media (min-width: 1024px) {
+  header > div {
+    grid-template-areas: "logo nav";
+    grid-template-columns: 20% auto;
+  }
+}
+header > div #logo-container {
+  grid-area: logo;
   padding: 10px;
-  text-align: right;
-}
-header > div #button-container button {
-  background-color: #ffd205;
-  border-radius: 23px;
-  color: #000;
-  display: inline-block;
-  font-size: 1.125rem;
-  font-weight: 700;
-  padding: 10px 20px;
-  border: none;
-  transition: 0.25s;
-}
-header > div #button-container button:hover {
-  background-color: #000;
-  color: #fff;
 }
 header > div #burger-container {
   align-items: center;
+  justify-content: flex-end;
   display: flex;
+  grid-area: burger;
   padding: 10px;
 }
 @media (min-width: 1024px) {
@@ -559,218 +487,441 @@ header > div #burger-container i {
   font-size: 1.875rem;
 }
 header > div #nav-container {
-  background-color: #2a3036;
+  background-color: #222222;
   display: none;
-  width: 100%;
-  position: absolute;
-  top: 60px;
-}
-header > div #nav-container .nav-btns {
-  display: inline-block;
-  text-decoration: none;
-  margin: 0 auto;
-  color: #fff;
-  padding: 20px 0;
-  width: 100%;
-}
-header > div #nav-container .nav-btns:hover {
-  background: #424b54;
-}
-header > div #nav-container .nav-btns:active {
-  background: #ffd205;
-}
-header > div #nav-container ul li {
-  text-align: center;
+  grid-area: nav;
+  padding: 20px 10px 10px;
 }
 @media (min-width: 1024px) {
   header > div #nav-container {
     background-color: #fff;
     display: block !important;
-    position: unset;
-    width: auto;
-  }
-  header > div #nav-container .nav-btns {
-    color: #2a3036;
-  }
-  header > div #nav-container ul {
-    display: flex;
-    align-items: center;
-  }
-  header > div #nav-container ul li {
-    margin: 0 20px;
   }
 }
 
-.hero {
-  background: url("../../../deploy/img/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 350px;
-  margin-top: 70px;
-}
-
-.history-header {
-  display: flex;
-  flex-direction: column;
-  margin: 40px 40px 0 40px;
+/* =============
+    Footer
+============= */
+footer {
+  background-color: #F8C832;
+  display: grid;
+  grid-template-areas: ". footer .";
+  grid-template-columns: 10px auto 10px;
+  padding: 45px 0 40px;
   text-align: center;
 }
-.history-header img {
-  margin: 10px auto;
-  width: 115px;
+footer > div {
+  grid-area: footer;
 }
-.history-header h1 {
-  margin: 20px 0;
-  color: #f8c832;
+footer > div h1 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
 }
-
-.history-content {
-  margin: 20px 40px;
+footer > div h1 span {
+  color: #fff;
 }
-.history-content p {
-  margin: 15px 0;
-}
-
-.skills {
-  background: #222222;
-  margin: 40px 0 0;
-}
-
-.skills-image {
-  background: url("../../../deploy/img/skills/robot.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 370px;
-}
-@media (min-width: 768px) {
-  .skills-image {
-    height: 600px;
-  }
-}
-
-.skills-content {
-  margin: 30px 0;
-  color: white;
-}
-.skills-content p {
-  margin: 20px 0;
-}
-.skills-content ul li {
+footer > div ul {
   display: flex;
-  justify-content: space-between;
-  margin: 30px 0;
+  justify-content: center;
+}
+footer > div ul li {
+  margin: 0 10px;
+}
+footer > div ul li a:link,
+footer > div ul li a:visited {
+  color: #000;
+  font-size: 1.875rem;
+  transition: 0.25s;
+}
+footer > div ul li a:link:hover, footer > div ul li a:link:active,
+footer > div ul li a:visited:hover,
+footer > div ul li a:visited:active {
+  color: #fff;
 }
 
-.hero-2 {
-  background: url("../../../deploy/img/hero-2/hero.jpg");
-  background-repeat: no-repeat;
+/* =============
+    Hero 
+============= */
+#hero {
+  background-image: url("../img/hero/hero.jpg");
   background-position: center;
-  width: 100%;
-  height: 100vh;
+  background-size: cover;
+  height: 360px;
 }
 @media (min-width: 768px) {
-  .hero-2 {
-    height: 100vh;
+  #hero {
+    height: 683px;
   }
+}
+
+/* =============
+    History
+============= */
+#history {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". history .";
+  padding: 60px 0;
 }
 @media (min-width: 1024px) {
-  .hero-2 {
-    min-height: 1000px;
-    background-size: cover;
+  #history {
+    grid-template-columns: auto 60% auto;
+    padding: 100px 0;
   }
 }
 @media (min-width: 1200px) {
-  .hero-2 {
-    height: 100vh;
+  #history {
+    grid-template-columns: auto 800px auto;
   }
 }
-
-.skynet {
-  margin: 50px 0;
+#history > div {
+  grid-area: history;
 }
-
-.image-1,
-.image-2,
-.image-3,
-.image-4,
-.image-5,
-.image-6 {
-  background-size: cover;
-  background-repeat: no-repeat;
+#history > div #history-first {
+  text-align: center;
 }
-
-.text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #f8c832;
-}
-
-.image-1 {
-  background-image: url("/deploy/img/skynet/gallery-1.jpg");
-}
-
-.image-2 {
-  background-image: url("/deploy/img/skynet/gallery-2.jpg");
-}
-
-.image-3 {
-  background-image: url("/deploy/img/skynet/gallery-3.jpg");
-}
-
-.image-4 {
-  display: none;
-}
-
-.image-5 {
-  display: none;
-}
-
-.image-6 {
-  display: none;
-}
-
 @media (min-width: 768px) {
-  .image-5 {
-    display: block;
-    background-image: url("/deploy/img/skynet/gallery-5.jpg");
+  #history > div #history-first {
+    display: grid;
+    grid-template-areas: ". history-first .";
+    grid-template-columns: 10% auto 10%;
+  }
+}
+@media (min-width: 768px) {
+  #history > div #history-first > div {
+    grid-area: history-first;
+  }
+}
+#history > div #history-first > div h1 {
+  color: #F8C832;
+  font-family: "Comfortaa", cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.875rem;
+  margin: 40px 0 30px;
+}
+@media (min-width: 768px) {
+  #history > div #history-first > div h1 {
+    font-size: 3.4375rem;
+    line-height: 3.5rem;
+    margin-bottom: 34px;
   }
 }
 @media (min-width: 1024px) {
-  .image-4 {
-    display: block;
-    background-image: url("/deploy/img/skynet/gallery-4.jpg");
-  }
-
-  .image-5 {
-    display: block;
-  }
-
-  .image-6 {
-    display: block;
-    background-image: url("/deploy/img/skynet/gallery-6.jpg");
+  #history > div #history-first > div h1 {
+    font-size: 4.125rem;
   }
 }
-.footer {
-  background: #f8c832;
-  padding: 30px;
+#history > div #history-first > div h1 span {
+  display: block;
+  font-size: 1.9375rem;
 }
-.footer h1 {
-  text-align: center;
+@media (min-width: 768px) {
+  #history > div #history-first > div h1 span {
+    font-size: 2.625rem;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-first > div h1 span {
+    font-size: 3.375rem;
+  }
+}
+#history > div #history-first > div h4 {
+  font-size: 1.0625rem;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  #history > div #history-middle {
+    display: grid;
+    grid-template-areas: ". history-middle .";
+    grid-template-columns: 10% auto 10%;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-middle > div {
+    grid-area: history-middle;
+  }
+}
+#history > div #history-middle > div p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  margin-top: 25px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #history > div #history-middle > div p {
+    line-height: 1.625rem;
+    margin-top: 34px;
+  }
+}
+@media (min-width: 768px) {
+  #history > div #history-last {
+    display: grid;
+    grid-template-areas: ". history-last .";
+    grid-template-columns: 10% auto 10%;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-last {
+    grid-template-columns: 15% auto 15%;
+  }
+}
+@media (min-width: 768px) {
+  #history > div #history-last > div {
+    grid-area: history-last;
+  }
+}
+#history > div #history-last > div h3 {
+  font-size: 1rem;
+  margin-top: 25px;
+}
+@media (min-width: 768px) {
+  #history > div #history-last > div h3 {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  #history > div #history-last > div h3 {
+    margin-top: 100px;
+  }
+}
+#history > div #history-last > div p {
+  line-height: 1.375rem;
+  text-align: justify;
 }
 
-.footer ul {
+/* =============
+    Skills
+============= */
+@media (min-width: 1200px) {
+  #skills {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". skills-container .";
+  }
+}
+@media (min-width: 1024px) {
+  #skills > div {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #skills > div {
+    grid-area: skills-container;
+  }
+}
+#skills > div aside {
+  background-image: url("../img/skills/robot.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 380px;
+}
+@media (min-width: 768px) {
+  #skills > div aside {
+    height: 476px;
+  }
+}
+@media (min-width: 1024px) {
+  #skills > div aside {
+    height: auto;
+  }
+}
+#skills > div #skills-content {
+  background-color: #222222;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". skills .";
+  padding: 60px 0;
+  grid-template-columns: 10px auto 10px;
+  padding: 60px 0;
+}
+@media (min-width: 768px) {
+  #skills > div #skills-content {
+    grid-template-columns: 10% auto 10%;
+  }
+}
+@media (min-width: 1024px) {
+  #skills > div #skills-content {
+    padding: 25px 0 44px;
+  }
+}
+#skills > div #skills-content > div {
+  grid-area: skills;
+  text-decoration: none;
+  transition: 0.25s;
+}
+#skills > div #skills-content > div h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.3125rem;
+  line-height: 1.625rem;
+  margin-bottom: 35px;
+}
+#skills > div #skills-content > div p {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  display: inline-block;
+}
+#skills > div #skills-content > div ul li {
+  margin-top: 46px;
+}
+@media (min-width: 768px) {
+  #skills > div #skills-content > div ul li {
+    margin-top: 51px;
+  }
+}
+#skills > div #skills-content > div ul li .top {
   display: flex;
-  justify-content: center;
+}
+#skills > div #skills-content > div ul li .top h5 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+#skills > div #skills-content > div ul li .top h4 {
+  font-size: 1.125rem;
+  margin-left: auto;
+}
+#skills > div #skills-content > div ul li .bottom {
+  background-color: #000;
+  height: 9px;
+  margin-top: 5px;
+  width: 100%;
+}
+#skills > div #skills-content > div ul li .bottom > div {
+  background-color: #F8C832;
+  height: 9px;
+}
+#skills > div #skills-content > div ul #emotion .yellow-bar {
+  width: 64%;
+}
+#skills > div #skills-content > div ul #learning .yellow-bar {
+  width: 90%;
+}
+#skills > div #skills-content > div ul #math .yellow-bar {
+  width: 95%;
+}
+
+/* =============
+    Hero 2
+============= */
+#hero-2 {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-2 .";
+}
+@media (min-width: 1200px) {
+  #hero-2 {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#hero-2 img {
+  grid-area: hero-2;
+  width: 100%;
+}
+
+/* =============
+    Skynet
+============= */
+#skynet {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". skynet .";
+}
+@media (min-width: 768px) {
+  #skynet {
+    padding: 54px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #skynet {
+    padding: 100px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #skynet {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#skynet > div {
+  grid-area: skynet;
+}
+#skynet > div ul {
+  display: grid;
+  grid-area: section-5;
+  grid-gap: 20px;
+  grid-template-areas: "gallery-7" "gallery-1" "gallery-1" "gallery-6" "gallery-3";
+  grid-template-rows: repeat(5, 235px);
+}
+@media (min-width: 768px) {
+  #skynet > div ul {
+    grid-template-areas: "gallery-1 gallery-3" "gallery-1 gallery-7" "gallery-5 gallery-6";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 277px);
+  }
+}
+@media (min-width: 1024px) {
+  #skynet > div ul {
+    grid-template-areas: "gallery-1 gallery-5 gallery-2" "gallery-1 gallery-7 gallery-4" "gallery-6 gallery-3 gallery-4";
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+#skynet > div ul li {
+  background-position: center;
+  background-size: cover;
+}
+#skynet > div ul #gallery-1 {
+  background-image: url("../img/skynet/gallery-1.jpg");
+  grid-area: gallery-1;
+}
+#skynet > div ul #gallery-2 {
+  background-image: url("../img/skynet/gallery-2.jpg");
+}
+@media (min-width: 1024px) {
+  #skynet > div ul #gallery-2 {
+    grid-area: gallery-2;
+  }
+}
+#skynet > div ul #gallery-3 {
+  background-image: url("../img/skynet/gallery-3.jpg");
+  background-position: center top;
+  grid-area: gallery-3;
+}
+#skynet > div ul #gallery-4 {
+  background-image: url("../img/skynet/gallery-4.jpg");
+}
+@media (min-width: 1024px) {
+  #skynet > div ul #gallery-4 {
+    grid-area: gallery-4;
+  }
+}
+#skynet > div ul #gallery-5 {
+  background-image: url("../img/skynet/gallery-5.jpg");
+}
+@media (min-width: 768px) {
+  #skynet > div ul #gallery-5 {
+    grid-area: gallery-5;
+  }
+}
+#skynet > div ul #gallery-6 {
+  background-image: url("../img/skynet/gallery-6.jpg");
+  grid-area: gallery-6;
+}
+#skynet > div ul #gallery-7 {
   align-items: center;
-  margin: 20px 0;
+  color: #F8C832;
+  display: flex;
+  font-family: "Pacifico", cursive;
+  grid-area: gallery-7;
+  justify-content: center;
 }
-.footer ul li {
-  margin: 10px;
+#skynet > div ul #gallery-7 h1 {
+  font-size: 2.6875rem;
+  font-weight: 400;
 }
-.footer ul a:hover {
-  opacity: 0.5;
-  transition: opacity ease 0.2s;
+@media (min-width: 768px) {
+  #skynet > div ul #gallery-7 h1 {
+    font-size: 2.875rem;
+  }
 }
